@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#logo-letter {
+  font-size: 65px;
+  font-family: "poppins", sans-serif;
+  text-decoration: underline;
+  color: rgb(59, 109, 225);
+}
+body {
+  /* padding-left:200px */
+}
+header {
+  display: flex;
+  /* border: 2px solid red; */
+  height: 100px;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+h1 {
+  font-size: 30px;
+}
+
+nav {
+  /* border: 2px solid red; */
+  height: 100%;
+  /* margin-left: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  /* border: 2px solid black; */
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  visibility: hidden;
+  /* border: 2px solid black; */
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.black-layer {
+  width: 100%;
+  height: 82%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+  position: absolute;
+  top: 17%;
+  left: 0;
+}
+
+.hero-texts-buttons {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-texts-buttons h1 {
+  font-size: 50px;
+  color: rgb(247, 247, 247);
+}
+
+.hero-texts-buttons p {
+  font-size: 20px;
+  width: 50%;
+  color: rgb(247, 247, 247);
+}
+
+#explore-courses-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 15px;
+  background: linear-gradient(
+    to right,
+    rgb(124, 124, 200),
+    rgb(69, 69, 161),
+    rgb(11, 11, 84)
+  );
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#join-us-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 15px;
+  background: linear-gradient(
+    to right,
+    rgb(121, 211, 19),
+    rgb(8, 188, 104),
+    rgb(124, 124, 200)
+  );
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#explore-courses-button:hover {
+  background: linear-gradient(
+    to right,
+    rgb(11, 11, 84),
+    rgb(48, 48, 211),
+    rgb(124, 124, 200)
+  );
+ 
+}
+#join-us-button:hover {
+  background: linear-gradient(
+    to right,
+    rgb(11, 11, 84),
+    rgb(48, 48, 211),
+    rgb(124, 124, 200)
+  );
+ 
+}
